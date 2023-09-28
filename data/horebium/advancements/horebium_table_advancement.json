@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "horebiumtable": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "minecraft:horebium_table_recipe"
+            }
+        }
+    },
+    "rewards": {
+        "function": "horebium:vanilla_crafting/craft_horebium_table"
+    }
+}

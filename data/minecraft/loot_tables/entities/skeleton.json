@@ -1,0 +1,39 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:loot_table",
+			"name": "vanilla:entities/skeleton"
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "item",
+			"name": "minecraft:skeleton_skull",
+			"weight": 1
+		  }
+		],
+		"conditions": [
+		  {
+			  "condition": "minecraft:entity_properties",
+			  "entity": "this",
+			  "predicate": {
+				"nbt": "{Tags:[\"HRB_might_drop_head\"]}",
+				"killed_by_player": true
+			  }
+			},
+			{
+			  "condition": "minecraft:random_chance",
+			  "chance": 0.25
+			}
+		]
+	  }
+	]
+  }
+  

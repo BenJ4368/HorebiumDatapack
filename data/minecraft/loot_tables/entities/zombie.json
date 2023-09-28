@@ -1,0 +1,39 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:loot_table",
+			"name": "vanilla:entities/zombie"
+		  }
+		]
+	  },
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "item",
+			"name": "minecraft:zombie_head",
+			"weight": 1
+		  }
+		],
+		"conditions": [
+		  {
+			  "condition": "minecraft:entity_properties",
+			  "entity": "this",
+			  "predicate": {
+				"nbt": "{Tags:[\"HRB_might_drop_head\"]}",
+				"killed_by_player": true
+			  }
+			},
+			{
+			  "condition": "minecraft:random_chance",
+			  "chance": 0.25
+			}
+		]
+	  }
+	]
+  }
+  

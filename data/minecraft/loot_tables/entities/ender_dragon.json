@@ -1,0 +1,27 @@
+{
+	"pools": [
+		  {
+			  "rolls": 1,
+			  "entries": [
+				  {
+					  "type": "item",
+					  "name": "minecraft:dragon_head"
+				  }
+			  ],
+			  "conditions": [
+				  {
+					  "condition": "minecraft:entity_properties",
+					  "entity": "this",
+					  "predicate": {
+						"nbt": "{Tags:[\"HRB_might_drop_head\"]}",
+						"killed_by_player": true
+					  }
+					},
+					{
+					  "condition": "minecraft:random_chance",
+					  "chance": 0.1
+					}
+				]
+		  }
+	  ]
+  }

@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#i#",
+        "RAR",
+        "#S#"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:deepslate_bricks"
+        },
+        "i": {
+            "item": "minecraft:iron_ingot"
+        },
+        "R": {
+            "item": "minecraft:red_nether_bricks"
+        },
+        "A": {
+            "item": "minecraft:amethyst_shard"
+        },
+        "S": {
+            "item": "minecraft:smithing_table"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}

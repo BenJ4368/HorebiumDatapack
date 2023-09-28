@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "hammer": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "minecraft:hammer_recipe"
+            }
+        }
+    },
+    "rewards": {
+        "function": "horebium:vanilla_crafting/craft_hammer"
+    }
+}
