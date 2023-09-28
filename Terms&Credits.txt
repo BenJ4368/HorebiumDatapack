@@ -14,8 +14,8 @@ Developping period:		28/09/29 - present
 HorebiumDatapack is free for anyone to use, modify and share within their project
 as long as one does it for the betterment of the community.
 
-HorebiumDatapack should be used with its custom Resourcepack, based of the Faithfull x32.
-Horebium Resourcepack follows the same Terms of use.
+HorebiumDatapack should be used with its custom Resourcepack, based on the Faithfull x32.
+HorebiumResourcepack follows the same Terms of use.
 
 You can use parts or the entirety of this datapack to create and distribute your own, as long as:
 	* Your datapack includes propper modification/addition.
@@ -31,7 +31,7 @@ Vanilla Tweaks:			https://vanillatweaks.net/
 TimberForge:			https://timberforgeyt.wixsite.com/timber-forge
 						https://www.youtube.com/@TimberForge
 
-Faithfull:				https://faithfulpack.net/
+Myself, ./BenJ			Discord:	.benj
 
 
 
