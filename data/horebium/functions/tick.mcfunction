@@ -15,4 +15,5 @@ execute as @e[type=armor_stand,tag=chunkloader] at @s unless block ~ ~ ~ minecra
 
 # horebium:horebium_sword
 execute as @a[nbt={SelectedItem:{tag:{CustomModelData:4368007}}}] at @s run function horebium:horebium_sword/might_drop_head
-
+execute as @a[nbt={SelectedItem:{tag:{CustomModelData:4368007,Enchantments:[{id:"minecraft:mending"}]}}}] run function horebium:horebium_sword/unenchantable
+execute as @a[nbt={SelectedItem:{tag:{CustomModelData:4368007,Enchantments:[{id:"minecraft:unbreaking"}]}}}] run function horebium:horebium_sword/unenchantable
