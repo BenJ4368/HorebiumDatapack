@@ -1,0 +1,1 @@
+execute as @e[ type=iron_golem,tag=!custom_scanned,sort=random] at @s run function horebium:mobs/demo_golem

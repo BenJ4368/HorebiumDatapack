@@ -1,5 +1,8 @@
 {
 	"values": [
-		"horebium:tick"
+		"horebium:tick_blocks",
+		"horebium:tick_items",
+		"horebium:tick_mobs",
+		"horebium:tick_curses"
 	]
 }
