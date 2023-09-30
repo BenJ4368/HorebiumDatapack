@@ -1,0 +1,29 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "_C_",
+        "BXB",
+        "AAA"
+    ],
+    "key": {
+        "_": {
+            "item": "minecraft:brick_slab"
+        },
+        "C": {
+            "item": "minecraft:chain"
+        },
+        "B": {
+            "item": "minecraft:brick_wall"
+        },
+        "X": {
+            "item": "minecraft:cauldron"
+        },
+        "A": {
+            "item": "minecraft:bricks"
+        }
+    },
+    "result": {
+        "item": "minecraft:knowledge_book",
+        "count": 1
+    }
+}
