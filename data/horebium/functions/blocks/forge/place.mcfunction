@@ -6,7 +6,7 @@ tp @e[type=item,distance=..5] @p
 
 place template horebium:craftable/hrb_forge_struct ~-1 ~-1 ~-1
 
-execute positioned ^ ^ ^0.5 align xyz run summon armor_stand ~ ~ ~ {HasVisualFire:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["HRB_forge"],ArmorItems:[{},{},{},{id:"minecraft:item_frame",Count:1b,tag:{CustomModelData:4368008}}]}
+execute positioned ^ ^ ^0.5 align xyz run summon armor_stand ~ ~ ~ {HasVisualFire:1b,Small:1b,Marker:1b,Invisible:1b,Tags:["HRB_forge"],ArmorItems:[{},{},{},{id:"minecraft:item_frame",Count:1b,tag:{CustomModelData:4368201}}]}
 
 playsound minecraft:block.metal.place block @p ~ ~ ~ 1 1
 playsound minecraft:block.anvil.use block @p ~ ~ ~ 0.5 0.5

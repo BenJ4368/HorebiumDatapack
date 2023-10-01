@@ -1,24 +1,24 @@
 # horebium_table/
 # place
-execute as @e[type=item_frame,tag=horebium_table] at @s run function horebium:blocks/horebium_table/place
+execute as @e[type=item_frame,tag=HRB_horebium_table] at @s run function horebium:blocks/horebium_table/place
 
 # break
-execute as @e[type=armor_stand,tag=horebium_table] at @s unless block ~ ~ ~ minecraft:dropper run function horebium:blocks/horebium_table/break
+execute as @e[type=armor_stand,tag=HRB_horebium_table] at @s unless block ~ ~ ~ minecraft:dropper run function horebium:blocks/horebium_table/break
 
 # craft
-execute as @e[type=armor_stand,tag=horebium_table] at @s run function horebium:blocks/horebium_table/craft
+execute as @e[type=armor_stand,tag=HRB_horebium_table] at @s run function horebium:blocks/horebium_table/craft
 
 
 
 # chunkloader/
 # place_error
-execute as @e[type=item_frame,tag=chunkloader] at @s if entity @e[type=armor_stand,tag=chunkloader,distance=..128] run function horebium:blocks/chunkloader/place_error
+execute as @e[type=item_frame,tag=HRB_chunkloader] at @s if entity @e[type=armor_stand,tag=HRB_chunkloader,distance=..128] run function horebium:blocks/chunkloader/place_error
 
 # place
-execute as @e[type=item_frame,tag=chunkloader] at @s unless entity @e[type=armor_stand,tag=chunkloader,distance=..128] run function horebium:blocks/chunkloader/place
+execute as @e[type=item_frame,tag=HRB_chunkloader] at @s unless entity @e[type=armor_stand,tag=HRB_chunkloader,distance=..128] run function horebium:blocks/chunkloader/place
 
 # break
-execute as @e[type=armor_stand,tag=chunkloader] at @s unless block ~ ~ ~ minecraft:obsidian run function horebium:blocks/chunkloader/break
+execute as @e[type=armor_stand,tag=HRB_chunkloader] at @s unless block ~ ~ ~ minecraft:obsidian run function horebium:blocks/chunkloader/break
 
 
 

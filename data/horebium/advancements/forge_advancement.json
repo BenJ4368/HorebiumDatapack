@@ -3,7 +3,7 @@
         "forge": {
             "trigger": "minecraft:recipe_unlocked",
             "conditions": {
-                "recipe": "minecraft:horebium_forge_recipe"
+                "recipe": "minecraft:forge_recipe"
             }
         }
     },
