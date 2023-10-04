@@ -18,6 +18,11 @@ scoreboard players add golem test_cmob 0
 
 
 
+# Skeleton_boss animation scoreboard setup
+scoreboard objectives remove HRB_skeleton_boss_animation
+scoreboard objectives add HRB_skeleton_boss_animation dummy
+
+
 
 
 
