@@ -18,10 +18,13 @@ scoreboard players add golem test_cmob 0
 
 
 
-# Skeleton_boss animation scoreboard setup
-scoreboard objectives remove HRB_skeleton_boss_animation
-scoreboard objectives add HRB_skeleton_boss_animation dummy
-
+# Skeleton_boss walking animation scoreboard setup
+scoreboard objectives remove HRB_skeleton_boss_walking_animation
+scoreboard objectives add HRB_skeleton_boss_walking_animation dummy
+# Skeleton_boss summoning cooldown scoreboard setup
+scoreboard objectives remove HRB_skeleton_boss_summoning_cooldown
+scoreboard objectives add HRB_skeleton_boss_summoning_cooldown dummy
+scoreboard objectives setdisplay sidebar HRB_skeleton_boss_summoning_cooldown
 
 
 
