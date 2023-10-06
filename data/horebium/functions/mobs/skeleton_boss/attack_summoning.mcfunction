@@ -7,10 +7,15 @@ execute if entity @e[type=player,distance=..30] run scoreboard players add @s HR
 execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run tag @s add HRB_summoning_state
 
 # Stop and levitate
-execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run effect give @s slowness infinite 255 true
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=240}] run effect give @s slowness infinite 255 true
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=240}] align xyz run tp ~0.5 ~ ~0.5
 execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run effect give @s levitation infinite 1 true
-execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run setblock ~ ~3 ~ barrier
-execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run effect give @s resistance infinite 30 true
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run setblock ~ ~4 ~ barrier
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=270}] run setblock ~1 ~2 ~ barrier
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=270}] run setblock ~-1 ~2 ~ barrier
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=270}] run setblock ~ ~2 ~1 barrier
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=270}] run setblock ~ ~2 ~-1 barrier
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run effect give @s resistance infinite 20 true
 
 # Particles
 execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run summon area_effect_cloud ~ ~0.25 ~ {Particle:"crimson_spore",Radius:5f,Duration:150}
@@ -24,14 +29,14 @@ execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run play
 
 # Summonings
 # Inner cercle
-execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run setblock ~-2 ~ ~-2 barrier
-execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=270}] run summon skeleton ~-2 ~ ~-2 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["HRB_skeleton_boss_summoning"],HandItems:[{id:"minecraft:bow",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:5s},{id:"minecraft:flame",lvl:1s}]}},{}],HandDropChances:[0.000F,0.085F]}
-execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run setblock ~-2 ~ ~2 barrier
-execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=270}] run summon skeleton ~-2 ~ ~2 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["HRB_skeleton_boss_summoning"],HandItems:[{id:"minecraft:bow",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:5s},{id:"minecraft:flame",lvl:1s}]}},{}],HandDropChances:[0.000F,0.085F]}
-execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run setblock ~2 ~ ~2 barrier
-execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=270}] run summon skeleton ~2 ~ ~2 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["HRB_skeleton_boss_summoning"],HandItems:[{id:"minecraft:bow",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:5s},{id:"minecraft:flame",lvl:1s}]}},{}],HandDropChances:[0.000F,0.085F]}
-execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run setblock ~2 ~ ~-2 barrier
-execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=270}] run summon skeleton ~2 ~ ~-2 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["HRB_skeleton_boss_summoning"],HandItems:[{id:"minecraft:bow",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:5s},{id:"minecraft:flame",lvl:1s}]}},{}],HandDropChances:[0.000F,0.085F]}
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run setblock ~-2 ~0.25 ~-2 barrier
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=270}] run summon skeleton ~-2 ~0.25 ~-2 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["HRB_skeleton_boss_summoning"],HandItems:[{id:"minecraft:bow",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:5s},{id:"minecraft:flame",lvl:1s}]}},{}],HandDropChances:[0.000F,0.085F]}
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run setblock ~-2 ~0.25 ~2 barrier
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=270}] run summon skeleton ~-2 ~0.25 ~2 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["HRB_skeleton_boss_summoning"],HandItems:[{id:"minecraft:bow",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:5s},{id:"minecraft:flame",lvl:1s}]}},{}],HandDropChances:[0.000F,0.085F]}
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run setblock ~2 ~0.25 ~2 barrier
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=270}] run summon skeleton ~2 ~0.25 ~2 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["HRB_skeleton_boss_summoning"],HandItems:[{id:"minecraft:bow",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:5s},{id:"minecraft:flame",lvl:1s}]}},{}],HandDropChances:[0.000F,0.085F]}
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=250}] run setblock ~2 ~0.25 ~-2 barrier
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=270}] run summon skeleton ~2 ~0.25 ~-2 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["HRB_skeleton_boss_summoning"],HandItems:[{id:"minecraft:bow",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:5s},{id:"minecraft:flame",lvl:1s}]}},{}],HandDropChances:[0.000F,0.085F]}
 
 # Outer cercle
 execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=270}] run summon skeleton ~-4 ~-1 ~-4 {Silent:1b,Invulnerable:1b,PersistenceRequired:1b,CanPickUpLoot:0b,Tags:["HRB_skeleton_boss_summoning"],HandItems:[{id:"minecraft:bow",Count:1b,tag:{Unbreakable:1b,Enchantments:[{id:"minecraft:power",lvl:5s},{id:"minecraft:flame",lvl:1s}]}},{}],HandDropChances:[0.000F,0.085F]}
@@ -53,7 +58,11 @@ execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=400}] run data
 
 execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=400}] run tag @s remove HRB_summoning_state
 
-execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=400}] run setblock ~ ~3 ~ air
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=400}] run setblock ~ ~4 ~ air
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=400}] run setblock ~1 ~3 ~ air
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=400}] run setblock ~-1 ~3 ~ air
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=400}] run setblock ~ ~3 ~1 air
+execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=400}] run setblock ~ ~3 ~-1 air
 
 # Kill summonings
 execute if entity @s[scores={HRB_skeleton_boss_summoning_cooldown=400}] run tp @e[tag=HRB_skeleton_boss_summoning,distance=..10] ~ ~-256 ~
