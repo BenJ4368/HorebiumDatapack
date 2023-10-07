@@ -1,3 +1,7 @@
+# duplication_prevention.mcfunction
+
+
+# Killing broken block drops
 # bricks
 execute unless block ~-1 ~-1 ~-1 bricks run kill @e[type=item,nbt={Item:{id:"minecraft:bricks"}},distance=0..5,sort=nearest,limit=6]
 execute unless block ~-1 ~-1 ~ bricks run kill @e[type=item,nbt={Item:{id:"minecraft:bricks"}},distance=0..5,sort=nearest,limit=6]

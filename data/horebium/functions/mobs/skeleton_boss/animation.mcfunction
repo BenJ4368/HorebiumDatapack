@@ -1,4 +1,8 @@
-# Walking animation
+# animation.mcfunction
+
+
+
+# WALKING ANIMATION
 # Scoreboard incrementation and reset
 execute if entity @s[scores={HRB_skeleton_boss_walking_animation=16..}] run scoreboard players set @s HRB_skeleton_boss_walking_animation 0
 execute unless entity @s[nbt={Motion:[0.0d,0.0d,0.0d]}] run scoreboard players add @s HRB_skeleton_boss_walking_animation 1
