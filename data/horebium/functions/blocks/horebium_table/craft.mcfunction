@@ -3,7 +3,7 @@
 
 
 # Chunkloader
-execute if block ~ ~ ~ dropper{Items:[{Slot:0b,id:"minecraft:flint",Count:1b,tag:{HRB_horebium_plates:1b}},{Slot:1b,id:"minecraft:echo_shard",Count:1b},{Slot:2b,id:"minecraft:flint",Count:1b,tag:{HRB_horebium_plates:1b}},{Slot:3b,id:"minecraft:echo_shard",Count:1b},{Slot:4b,id:"minecraft:end_crystal",Count:1b},{Slot:5b,id:"minecraft:echo_shard",Count:1b},{Slot:6b,id:"minecraft:flint",Count:1b,tag:{HRB_horebium_plates:1b}},{Slot:7b,id:"minecraft:lodestone",Count:1b},{Slot:8b,id:"minecraft:flint",Count:1b,tag:{HRB_horebium_plates:1b}}]} run function horebium:blocks/horebium_table/recipes/chunkloader
+execute if block ~ ~ ~ dropper{Items:[{Slot:1b,id:"minecraft:end_crystal",Count:1b},{Slot:3b,id:"minecraft:echo_shard",Count:1b},{Slot:4b,id:"minecraft:lodestone",Count:1b},{Slot:5b,id:"minecraft:echo_shard",Count:1b},{Slot:7b,id:"minecraft:echo_shard",Count:1b}]} run function horebium:blocks/horebium_table/recipes/chunkloader
 
 
 

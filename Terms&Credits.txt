@@ -11,28 +11,41 @@ Developping period:		28/09/29 - present
 			Terms of use
 			============
 
-HorebiumDatapack is free for anyone to use, modify and share within their project
-as long as one does it for the betterment of the community.
+HorebiumDatapack is free for anyone to use, modify and share within their
+project as long as one does it for the betterment of the community.
 
-HorebiumDatapack should be used with its custom Resourcepack, based on the Faithfull x32.
-HorebiumResourcepack follows the same Terms of use.
+HorebiumDatapack should be used with its custom Resourcepack, based on
+the Faithfull x32. HorebiumResourcepack follows the same Terms of use.
 
-You can use parts or the entirety of this datapack to create and distribute your own, as long as:
+You can use parts or the entirety of this datapack to
+create and distribute your own, as long as:
+
 	* Your datapack includes propper modification/addition.
 	* You appropriately credited myself, and all who I credited below.
-	* You do not sell or restrict access to any datapack that includes any part of the HorebiumDatapack
+	* You do not sell or restrict access to any datapack that
+	  includes any part of the HorebiumDatapack
 
 
 			Thanks and Credits
 			==================
 
 Vanilla Tweaks:			https://vanillatweaks.net/
+	Mobs heads, loot tables
 
-TimberForge:			https://timberforgeyt.wixsite.com/timber-forge
-						https://www.youtube.com/@TimberForge
+TimberForge:			https://www.youtube.com/@TimberForge
+	Huge help through tutorials
+
+Zx9_WarZz				https://www.twitch.tv/zx9_warzz
+	Textures, ideas
+
+LeCreepy				#####
+	Ideas
+
+seeeyt					https://www.youtube.com/channel/UCmyJNnXwWkg-dnL4DJF395A
+	Sounds
 
 Me, ./BenJ				https://discordapp.com/users/424644014478852097
-Zx9_WarZz				https://www.twitch.tv/zx9_warzz
+	Guess?
 
 
 

@@ -3,7 +3,7 @@
 
 
 # Info display
-tellraw @p {"text":"Cannot break while forge is placed.","color":"red"}
+tellraw @p {"text":"Cannot be broken while forge is placed.","color":"red"}
 
 # Killing broken block drops
 kill @e[type=item,nbt={Item:{id:"minecraft:chain"}},distance=0..5,sort=nearest,limit=2]

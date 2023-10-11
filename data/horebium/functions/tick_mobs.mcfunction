@@ -3,6 +3,12 @@
 
 
 # SKELETON BOSS
+# Boss spawn
+execute as @e[tag=HRB_skeleton_boss_arena_center] at @s if entity @e[type=player,distance=..10] unless entity @s[tag=HRB_boss_spawned] run function horebium:mobs/skeleton_boss/spawn
+
+# Boss stays in arena
+execute as @e[tag=HRB_skeleton_boss_arena_center,tag=HRB_boss_spawned] at @s unless entity @e[type=skeleton,tag=HRB_skeleton_boss,distance=..15] run function horebium:mobs/skeleton_boss/arena
+
 # Smoothing rotation
 execute as @e[type=skeleton,tag=HRB_skeleton_boss] at @s store result entity @e[type=armor_stand,tag=HRB_skeleton_boss,limit=1,sort=nearest] Rotation[0] float 1 run data get entity @s Rotation[0]
 # Walking animation

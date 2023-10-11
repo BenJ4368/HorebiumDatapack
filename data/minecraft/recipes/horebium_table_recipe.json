@@ -2,8 +2,8 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         "#i#",
-        "RAR",
-        "#S#"
+        "ASA",
+        "###"
     ],
     "key": {
         "#": {
@@ -11,9 +11,6 @@
         },
         "i": {
             "item": "minecraft:iron_ingot"
-        },
-        "R": {
-            "item": "minecraft:red_nether_bricks"
         },
         "A": {
             "item": "minecraft:amethyst_shard"

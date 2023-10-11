@@ -22,6 +22,7 @@ scoreboard objectives add HRB_skeleton_boss_walking_animation dummy
 # Summoning attack cooldown
 scoreboard objectives remove HRB_skeleton_boss_summoning_cooldown
 scoreboard objectives add HRB_skeleton_boss_summoning_cooldown dummy
+scoreboard objectives setdisplay sidebar HRB_skeleton_boss_summoning_cooldown
 
 
 

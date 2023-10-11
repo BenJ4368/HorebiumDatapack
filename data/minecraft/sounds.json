@@ -1,0 +1,18 @@
+{
+	"skeleton_boss_laugh": {
+	  "sounds": [
+		{
+			"name": "skeleton_boss/laugh_1",
+			"weight": 1
+		},
+		{
+			"name": "skeleton_boss/laugh_2",
+			"weight": 2
+		},
+		{
+			"name": "skeleton_boss/laugh_3",
+			"weight": 1
+		}
+	  ]
+	}
+  }
