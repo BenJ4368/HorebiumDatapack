@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "craftingorangeapple": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "minecraft:orange_apple_recipe"
+            }
+        }
+    },
+    "rewards": {
+        "function": "horebium:vanilla_crafting/craft_orange_apple"
+    }
+}

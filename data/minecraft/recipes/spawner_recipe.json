@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"_E_",
+		"ENE",
+		"_E_"
+	],
+	"key": {
+		"_": {
+			"item": "minecraft:iron_bars"
+		},
+		"E": {
+			"item": "minecraft:echo_shard"
+		},
+		"N": {
+			"item": "minecraft:netherite_block"
+		}
+	},
+	"result": {
+		"item": "minecraft:knowledge_book",
+		"count": 1
+	}
+}

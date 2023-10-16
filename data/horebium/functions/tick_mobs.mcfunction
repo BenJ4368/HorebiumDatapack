@@ -21,4 +21,4 @@ execute as @e[tag=HRB_skeleton_boss,type=armor_stand] at @s unless entity @e[tag
 
 
 # /*/*/ NATURAL CUSTOM MOBS SPAWNING TESTS /*/*/
-execute as @e[ type=iron_golem,tag=!custom_scanned,sort=random] at @s run function horebium:mobs/demo_golem
+#execute as @e[type=iron_golem,tag=!custom_scanned,sort=random] at @s run function horebium:mobs/demo_golem

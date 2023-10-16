@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "craftingblueapple": {
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipe": "minecraft:blue_apple_recipe"
+            }
+        }
+    },
+    "rewards": {
+        "function": "horebium:vanilla_crafting/craft_blue_apple"
+    }
+}

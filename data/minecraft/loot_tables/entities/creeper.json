@@ -1,38 +1,72 @@
 {
-  "type": "minecraft:entity",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:loot_table",
-          "name": "vanilla:entities/creeper"
-        }
-      ]
-    },
-	{
-		"rolls": 1,
-		"entries": [
-		  {
-			"type": "item",
-			"name": "minecraft:creeper_head",
-			"weight": 1
-		  }
-		],
-		"conditions": [
-		  {
-			"condition": "entity_properties",
-			"entity": "this",
-			"predicate": {
-			  "nbt": "{Tags:[\"HRB_might_drop_head\"]}",
-			  "killed_by_player": true
-			}
-		  },
-		  {
-			  "condition": "minecraft:random_chance",
-			  "chance": 0.25
-		  }
-		]
-	}
-  ]
+	"type": "minecraft:entity",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "vanilla:entities/creeper"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:creeper_head",
+					"weight": 1
+				}
+			],
+			"conditions": [
+				{
+					"condition": "entity_properties",
+					"entity": "this",
+					"predicate": {
+						"nbt": "{Tags:[\"HRB_might_drop_head\"]}"
+					}
+				},
+				{
+					"condition": "minecraft:killed_by_player"
+				},
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.25
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:flint",
+					"weight": 1,
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Tags:[\"HRB_dummy_soul_drop\"]}"
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "minecraft:entity_properties",
+					"entity": "this",
+					"predicate": {
+						"nbt": "{Tags:[\"HRB_might_drop_soul\"]}"
+					}
+				},
+				{
+					"condition": "minecraft:killed_by_player"
+				},
+				{
+					"condition": "minecraft:random_chance",
+					"chance": 0.10
+				}
+			]
+		}
+	]
 }

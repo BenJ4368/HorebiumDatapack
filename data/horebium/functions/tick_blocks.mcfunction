@@ -39,3 +39,13 @@ execute as @e[type=armor_stand,tag=HRB_forge] at @s unless block ~ ~2 ~ chain ru
 execute as @e[type=armor_stand,tag=HRB_forge] at @s run function horebium:blocks/forge/duplication_protection
 # Crafting (using)
 execute as @e[type=armor_stand,tag=HRB_forge] at @s run function horebium:blocks/forge/craft
+
+
+
+# SOUL LANTERN
+# Placing
+execute as @e[type=item_frame,tag=HRB_soul_lantern] at @s run function horebium:blocks/soul_lantern/place
+# Breaking
+execute as @e[type=armor_stand,tag=HRB_soul_lantern] at @s unless block ~ ~ ~ minecraft:nether_brick_fence run function horebium:blocks/soul_lantern/break
+# Use
+execute as @e[type=armor_stand,tag=HRB_soul_lantern] at @s run function horebium:blocks/soul_lantern/use
